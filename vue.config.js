@@ -1,8 +1,8 @@
 /*eslint semi: "error"*/
-const path = require('path')
+const path = require('path');
 
-const PORT = 8550
-const DEV_HOST = 'vmep.com'
+const PORT = 8550;
+const DEV_HOST = 'vmep.com';
 
 /**
  * https://cli.vuejs.org/config/#pages
@@ -33,14 +33,14 @@ module.exports = {
     }
   },
 
-  // devServer: {
-  //   port: PORT,
-  //   historyApiFallback: {
-  //     rewrites: [
-  //       { from: /^\/manage\/?.*/, to: path.posix.join('/', 'manage/index.asp') },
-  //       { from: /./, to: path.posix.join('/', 'index.asp') }
-  //     ]
-  //   },
-  //   allowedHosts: [DEV_HOST]
-  // }
-}
+  devServer: {
+    port: PORT,
+    historyApiFallback: {
+      rewrites: [
+        { from: /^\/manage\/?.*/, to: path.posix.join('/', 'manage/index.asp') },
+        { from: /./, to: path.posix.join('/', 'index.asp') }
+      ]
+    },
+    allowedHosts: [DEV_HOST]
+  }
+};
