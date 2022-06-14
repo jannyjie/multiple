@@ -6,14 +6,19 @@
     </div>
     <main>
       <h1>Index page</h1>
-      <router-view/>
+      <router-view />
     </main>
   </div>
 </template>
+<script>
+export default {
+  name: "appIndex",
+};
+</script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
