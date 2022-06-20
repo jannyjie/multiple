@@ -8,29 +8,30 @@
  * https://cli.vuejs.org/config/#pages
  */
 module.exports = {
-  indexPath: 'index.html',
+  indexPath: "index.html",
   pages: {
     index: {
-      entry: 'src/index/main.js',
-      template: 'public/index.html',
-      filename: 'index.html',
-      title: 'Index Page',
-      chunks: ['chunk-vendors', 'chunk-common', 'index']
+      entry: "src/index/main.js",
+      template: "public/index.html",
+      filename: "index.html",
+      title: "Index Page",
+      chunks: ["chunk-vendors", "chunk-common", "index"],
     },
     manage: {
-      entry: 'src/manage/main.js',
-      template: 'public/indexhtml',
-      filename: 'manage/index.html',
-      title: 'Manage Page',
-      chunks: ['chunk-vendors', 'chunk-common', 'manage']
+      entry: "src/manage/main.js",
+      template: "public/manage/index.html",
+      filename: "manage/index.html",
+      title: "Manage Page",
+      chunks: ["chunk-vendors", "chunk-common", "manage"],
     },
     dashboard: {
-      entry: 'src/dashboard/main.js',
-      template: 'public/index.html',
-      filename: 'dashboard/index.html',
-      title: 'Dashboard Page',
-      chunks: ['chunk-vendors', 'chunk-common', 'dashboard']
-    }
+      entry: "src/dashboard/main.js",
+      template: "public/dashboard/index.html",
+      filename: "dashboard/index.html",
+      title: "Dashboard Page",
+      keyword: "keyword",
+      chunks: ["chunk-vendors", "chunk-common", "dashboard"],
+    },
   },
 
   // devServer: {
